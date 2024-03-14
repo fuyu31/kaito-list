@@ -135,7 +135,7 @@ input[type="submit"] {
   margin-top: 40px;
   padding-top: 40px;
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1),
-               0 0 40px 20px rgba(0, 0, 0, 0.05);
+    0 0 40px 20px rgba(0, 0, 0, 0.05);
 
   @include mq(pc) {
     font-size: 40px;
@@ -146,6 +146,7 @@ input[type="submit"] {
 
 .name-lists {
   margin-top: 40px;
+  cursor: pointer;
 }
 
 .name-list {
@@ -191,8 +192,7 @@ input[type="submit"] {
 .inp-list-j {
   position: absolute;
   top: -4px;
-  }
-
+}
 
 .imp-list span {
   align-items: center;
@@ -206,7 +206,7 @@ input[type="submit"] {
   position: relative;
 
   @include mq(pc) {
-    min-width: 1000px;
+    font-weight: bold;
   }
 }
 
@@ -239,19 +239,6 @@ input[type="submit"] {
   display: flex;
 }
 
-.footer {
-  color: #fff;
-  text-align: center;
-  background-color: #7c7a7a;
-  margin-top: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  @include mq(pc) {
-    font-size: 40px;
-  }
-}
-
 .pagetop {
   @include mq(pc) {
     height: 100px;
@@ -278,5 +265,18 @@ input[type="submit"] {
     border-top: 3px solid #000;
     border-right: 3px solid #000;
     transform: translateY(20%) rotate(-45deg);
+  }
+}
+
+.footer {
+  color: #fff;
+  text-align: center;
+  background-color: #7c7a7a;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include mq(pc) {
+    font-size: 40px;
   }
 }

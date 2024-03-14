@@ -131,6 +131,7 @@ input[type=submit] {
 
 .name-lists {
   margin-top: 40px;
+  cursor: pointer;
 }
 
 .name-list {
@@ -192,7 +193,7 @@ input[type=submit] {
 }
 @media screen and (min-width: 768px) {
   .imp-list span {
-    min-width: 1000px;
+    font-weight: bold;
   }
 }
 
@@ -226,20 +227,6 @@ input[type=submit] {
   display: flex;
 }
 
-.footer {
-  color: #fff;
-  text-align: center;
-  background-color: #7c7a7a;
-  margin-top: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    font-size: 40px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .pagetop {
     height: 100px;
@@ -266,5 +253,19 @@ input[type=submit] {
     border-top: 3px solid #000;
     border-right: 3px solid #000;
     transform: translateY(20%) rotate(-45deg);
+  }
+}
+
+.footer {
+  color: #fff;
+  text-align: center;
+  background-color: #7c7a7a;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    font-size: 40px;
   }
 }/*# sourceMappingURL=style.css.map */

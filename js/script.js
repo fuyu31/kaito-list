@@ -20,6 +20,33 @@ $(document).ready(function () {
   });
 });
 
+
+// 名前の配列
+const names = [
+  "冬幸", "ZARA", "慎二", "晃大", "沙也加", "善三郎", "恵理子", "Take", "克己",
+  "成貴", "ほりちゃん", "恵美", "おじいちゃん", "おばあちゃん", "アキファ",
+  "キャメロン", "ファリダ", "ロブ兄", "あけみん", "美織", "はると"
+];
+
+// 新しいul要素を作成
+const list = document.createElement("ul");
+list.classList.add("name-lists");
+
+// 各名前でli要素を生成し、ulに追加
+names.forEach((name) => {
+  const listItem = document.createElement("li");
+  listItem.classList.add("name-list");
+  const div = document.createElement("div");
+  div.classList.add("name");
+  div.textContent = name;
+  listItem.appendChild(div);
+  list.appendChild(listItem);
+});
+
+// 生成したリストをコンテナに追加
+document.getElementById("nameListContainer").appendChild(list);
+
+
 $(document).ready(function () {
   $(".name-list").click(function () {
     $(".name-list").removeClass("highlight");
@@ -35,6 +62,7 @@ $(document).ready(function () {
     $(this).removeClass("highlight");
   });
 });
+
 
 $(function () {
   $("#js-pagetop").click(function () {
